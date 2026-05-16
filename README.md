@@ -15,6 +15,7 @@ Este projeto contém a Landing Page de apresentação do sistema **Easy Market**
 * Gabriel Cavalcante
 * Antônio Gabriel
 * Hewerton Manoel
+* Silvano Antonio
 
 ## 💻 Tecnologias Utilizadas
 
