@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+::-webkit-scrollbar-thumb {
+    background: #1E293B;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #10B981;
+}
+
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+
+.btn-brutal {
+    box-shadow: 4px 4px 0px 0px #10B981;
+    transition: all 0.2s ease-out;
+}
+
+.btn-brutal:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px #0F172A;
+}
+
+.btn-brutal:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px 0px #0F172A;
+}
+
+.bg-navy.btn-brutal {
+    box-shadow: 4px 4px 0px 0px #10B981;
+}
+.bg-navy.btn-brutal:hover {
+    box-shadow: 2px 2px 0px 0px #0F172A;
+}
+
+.nav-scrolled {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    background-color: rgba(248, 250, 252, 0.95);
+}
+.nav-scrolled > div {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}

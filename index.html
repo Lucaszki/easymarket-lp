@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Market | Gestão Inteligente para Mercadinhos</title>
+    <meta name="description" content="Sistema de gestão completo para pequenos e médios mercados. PDV, estoque, fornecedores e atendimento remoto.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0F172A',
+                        navyLight: '#1E293B',
+                        success: '#10B981',
+                        paper: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Roboto Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="bg-paper text-navy font-sans antialiased selection:bg-success selection:text-white">
+
+    <header class="fixed top-0 w-full bg-paper/90 backdrop-blur-md z-50 border-b border-navy/10 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center transition-all duration-300" id="navbar-inner">
+            <div class="text-2xl font-black uppercase tracking-tighter">EASY<span class="text-success">MARKET</span></div>
+            <nav class="hidden md:flex gap-8 font-mono text-sm font-bold uppercase tracking-wider items-center">
+                <a href="#recursos" class="hover:text-success transition-colors">Recursos</a>
+                <a href="#sobre" class="hover:text-success transition-colors">Sobre o Projeto</a>
+                <a href="#" class="px-6 py-2 bg-navy text-white font-bold text-xs uppercase tracking-widest hover:bg-success transition-colors btn-brutal">
+                    Acessar Sistema
+                </a>
+            </nav>
+            <button class="md:hidden text-navy" aria-label="Menu" id="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between min-h-[90vh] gap-12">
+        <div class="flex-1 flex flex-col items-start justify-center">
+            <div class="inline-block px-3 py-1 mb-6 border border-navy/20 bg-navy/5 font-mono text-xs font-bold uppercase tracking-widest reveal-on-scroll">
+                V 1.0 // Lançamento Oficial
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black leading-[1.05] tracking-tighter uppercase mb-8 max-w-2xl reveal-on-scroll delay-100">
+                O Caos Termina.<br>
+                <span class="text-success">A Gestão Começa.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-navyLight max-w-xl mb-12 border-l-4 border-success pl-6 font-medium reveal-on-scroll delay-200">
+                Sistema de gestão definitivo para mercadinhos. PDV ágil, controle de estoque preciso e monitoramento remoto em tempo real.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 reveal-on-scroll delay-300 w-full sm:w-auto">
+                <a href="#recursos" class="px-8 py-4 bg-navy text-white font-bold text-lg hover:bg-success transition-colors duration-300 flex items-center justify-center gap-3 group btn-brutal w-full sm:w-auto">
+                    Explorar Recursos
+                    <i data-lucide="arrow-right" class="group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="flex-1 w-full flex items-center justify-center reveal-on-scroll delay-400">
+            <div>DASHBOARD</div>
+        </div>
+    </section>
+
+    <section id="recursos" class="py-24 bg-navy text-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal-on-scroll">
+                <h2 class="text-4xl md:text-6xl font-black uppercase border-b-4 border-success inline-block pb-2">Engenharia<br>do Sistema</h2>
+                <p class="font-mono text-gray-400 mt-6 md:mt-0 max-w-sm text-sm">Desenvolvido para atender os requisitos RNF-005 (Desempenho) e RNF-002 (Usabilidade).</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div class="md:col-span-8 bg-navyLight p-10 lg:p-14 border border-white/10 hover:border-success hover:-translate-y-1 transition-all duration-300 reveal-on-scroll group">
+                    <div class="flex justify-between items-start mb-10">
+                        <i data-lucide="monitor-smartphone" class="w-16 h-16 text-success group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-3xl lg:text-4xl font-black uppercase mb-4">Atendimento Remoto</h3>
+                    <p class="text-lg text-gray-300 font-mono leading-relaxed">Sua loja no seu bolso. Monitore operações, aprove promoções e acompanhe o faturamento em tempo real de qualquer lugar, a qualquer momento.</p>
+                </div>
+
+                <div class="md:col-span-4 bg-navyLight p-10 border border-white/10 hover:border-success hover:-translate-y-1 transition-all duration-300 reveal-on-scroll delay-100 group">
+                    <i data-lucide="shopping-cart" class="w-12 h-12 text-white group-hover:text-success mb-8 transition-colors"></i>
+                    <h3 class="text-2xl font-bold uppercase mb-4">PDV Ultra-Rápido</h3>
+                    <p class="text-gray-300">Checkout otimizado para evitar filas. Suporte a código de barras, registro de compras e emissão de cupons com agilidade.</p>
+                </div>
+
+                <div class="md:col-span-5 bg-navyLight p-10 border border-white/10 hover:border-success hover:-translate-y-1 transition-all duration-300 reveal-on-scroll group">
+                    <i data-lucide="package-search" class="w-12 h-12 text-white group-hover:text-success mb-8 transition-colors"></i>
+                    <h3 class="text-2xl font-bold uppercase mb-4">Estoque Inteligente</h3>
+                    <p class="text-gray-300">Alertas automáticos de estoque mínimo e inventário atualizado. Nunca perca uma venda por falta de mercadoria.</p>
+                </div>
+
+                <div class="md:col-span-7 bg-success p-10 lg:p-14 text-navy reveal-on-scroll delay-100 hover:-translate-y-1 transition-transform group">
+                    <i data-lucide="bar-chart-3" class="w-12 h-12 mb-8 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-3xl lg:text-4xl font-black uppercase mb-4">Relatórios e Fornecedores</h3>
+                    <p class="text-lg font-bold">Controle total do fluxo de caixa e gestão do histórico de pedidos com parceiros comerciais para reposição estratégica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 px-6 bg-paper relative overflow-hidden">
+        <div class="absolute -right-20 -top-20 w-96 h-96 bg-success/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
+            <div class="flex-1 reveal-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-black uppercase mb-8 leading-tight">Hardware Acessível.<br><span class="text-success">Software Robusto.</span></h2>
+                <p class="text-xl text-navyLight mb-10 leading-relaxed font-medium">O Easy Market foi arquitetado para rodar em computadores simples de pequenos comércios, sem sacrificar a performance.</p>
+
+                <div class="space-y-6 font-mono text-navyLight text-sm md:text-base">
+                    <div class="flex items-center gap-4 bg-white p-4 border border-navy/10 shadow-sm">
+                        <div class="p-2 bg-success/10 text-success"><i data-lucide="layout-dashboard"></i></div>
+                        <span>Interface Web portável (RNF-006)</span>
+                    </div>
+                    <div class="flex items-center gap-4 bg-white p-4 border border-navy/10 shadow-sm">
+                        <div class="p-2 bg-success/10 text-success"><i data-lucide="zap"></i></div>
+                        <span>Tempo de resposta &lt; 3 segundos (RNF-005)</span>
+                    </div>
+                    <div class="flex items-center gap-4 bg-white p-4 border border-navy/10 shadow-sm">
+                        <div class="p-2 bg-success/10 text-success"><i data-lucide="shield-check"></i></div>
+                        <span>Autenticação segura de usuários (RNF-004)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-1 w-full bg-white p-6 md:p-8 border-4 border-navy shadow-[12px_12px_0px_0px_rgba(16,185,129,1)] reveal-on-scroll delay-200">
+                <a href="https://unifacol.edu.br/" target="_blank" rel="noopener noreferrer" class="w-full h-64 flex items-center justify-center mb-8 bg-paper border-2 border-navy/5 hover:border-success transition-colors group overflow-hidden">
+                    <img src="./Assets/images/UNIFACOL.png" alt="Logo UNIFACOL" class="max-w-[80%] max-h-[80%] object-contain group-hover:scale-105 transition-transform">
+                </a>
+                <div class="font-mono text-xs text-navyLight mb-4 uppercase tracking-widest border-b border-navy/10 pb-2">Origem do Projeto</div>
+                <h3 class="text-3xl font-black uppercase mb-6 text-navy">Desenvolvido<br>na UNIFACOL</h3>
+                <p class="mb-2 text-navyLight text-lg">Este sistema é o resultado de um Projeto de Sistemas de Informação, com a missão de digitalizar e profissionalizar mercados locais, garantindo controle em tempo real e eficiência no ponto de venda.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy border-t border-white/10 pt-16 pb-8 px-6 text-white" id="contato">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div class="lg:col-span-2">
+                <div class="text-3xl font-black uppercase tracking-tighter mb-6">EASY<span class="text-success">MARKET</span></div>
+                <p class="text-gray-400 font-mono text-sm max-w-sm leading-relaxed mb-6">Sistema digital projetado para automatizar processos operacionais de pequenos estabelecimentos varejistas de forma eficiente e acessível.</p>
+                <div class="flex gap-4">
+                    <a href="#" aria-label="GitHub" class="w-10 h-10 bg-white/5 flex items-center justify-center hover:bg-success hover:text-navy transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+                    <a href="#" aria-label="LinkedIn" class="w-10 h-10 bg-white/5 flex items-center justify-center hover:bg-success hover:text-navy transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold uppercase tracking-wider mb-6 text-success">Módulos</h4>
+                <ul class="space-y-3 font-mono text-sm text-gray-400">
+                    <li><a href="#recursos" class="hover:text-white transition-colors">Vendas & PDV</a></li>
+                    <li><a href="#recursos" class="hover:text-white transition-colors">Estoque</a></li>
+                    <li><a href="#recursos" class="hover:text-white transition-colors">Fornecedores</a></li>
+                    <li><a href="#recursos" class="hover:text-white transition-colors">Atendimento Remoto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold uppercase tracking-wider mb-6 text-success">Institucional</h4>
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-4 group">
+                        <a href="https://unifacol.edu.br/" target="_blank" rel="noopener noreferrer" class="w-16 h-12 flex items-center justify-center border border-white/10 group-hover:border-success transition-colors overflow-hidden bg-white/5">
+                            <img src="./Assets/images/UNIFACOL.png" alt="UNIFACOL" class="max-w-[80%] max-h-[80%] object-contain grayscale group-hover:grayscale-0 transition-all">
+                        </a>
+                        <div class="font-mono text-xs text-gray-400 uppercase tracking-tighter">UNIFACOL<br>Campus Vitória</div>
+                    </div>
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-16 h-12 flex items-center justify-center border border-white/10 group-hover:border-success transition-colors overflow-hidden bg-white/5">
+                            <img src="./Assets/images/SI.png" alt="SI" class="max-w-[80%] max-h-[80%] object-contain grayscale group-hover:grayscale-0 transition-all">
+                        </div>
+                        <div class="font-mono text-xs text-gray-400 uppercase tracking-tighter">Sistemas de<br>Informação</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-500 text-xs font-mono uppercase tracking-widest">© 2026 Easy Market. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./js/Script.js"></script>
+</body>
+
+</html>
